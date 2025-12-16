@@ -7,7 +7,7 @@
   --destaque-inverso: #dbeafe; 
   --fundo-card: rgb(243, 243, 243);
   --header: rgba(255, 255, 250, 0.8);
-  --aside: lightgray;
+  --aside: #16223a;
 }
 
 .escuro {
@@ -20,7 +20,7 @@
   --fundo-card: #1e293b;
 
   --header: rgba(30, 41, 59, 0.8);
-  --aside: #16223a;
+  --aside:rgba(255, 255, 255, 0.789);
 }
 
 *{
@@ -98,7 +98,7 @@ article {
   margin-top: 15px;
 
   a {
-    color: white;
+    color: var(--texto-inverso);
     transition: 0.5s;
   }
   a:hover {

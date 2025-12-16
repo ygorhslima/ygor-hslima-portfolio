@@ -1,6 +1,7 @@
 aside{
     border-top: 1px solid gray;
     background-color: var(--aside);
+    color: var(--texto-inverso);
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -20,7 +21,7 @@ aside{
     .links{
         .link{
             a{
-                color: var(--texto);
+                color: var(--texto-inverso);
                 text-decoration: none;
             }
             a:hover{
