@@ -1,6 +1,6 @@
 import './style/style.css'
 import imgPerfil from '../../assets/img-perfil.jpg'
-import curriculo from './curriculo.pdf'
+import curriculo from './curriculo2.pdf'
 export default function SectionFicha(){
     return(
          <section id="ficha">
