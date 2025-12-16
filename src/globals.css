@@ -20,7 +20,7 @@
   --fundo-card: #1e293b;
 
   --header: rgba(30, 41, 59, 0.8);
-  --aside:rgba(255, 255, 255, 0.789);
+  --aside:rgb(255, 255, 255);
 }
 
 *{
@@ -56,7 +56,8 @@ i {
 #projetos,
 #skills,
 header,
-#ficha{
+#ficha,
+#sobre{
   padding: 70px;
 }
 
