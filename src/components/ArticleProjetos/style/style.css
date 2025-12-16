@@ -9,10 +9,6 @@
         grid-template-columns: repeat(2,0.4fr);
         justify-content: center;
         gap: 20px;
-
-        @media (max-width:768px) {
-            grid-template-columns: 1fr;
-        }
     
         .projeto{
             display: flex;
@@ -32,11 +28,34 @@
         }
     
         .foto{
-            width: 80%;
+            display: block;
+            width: 100%;
+            margin: auto;
             aspect-ratio: 16/9;
             object-fit: cover;
             overflow: hidden;
             border-radius:8px;
+        }
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    #projeto-container{
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 1fr !important;
+        
+        .projeto{
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+        .projeto-info{
+            max-width: 80%;
+        }
+        .foto{
+            aspect-ratio: 1/1;
+            max-width: 100%;
+            max-height: 300px;
         }
     }
 }

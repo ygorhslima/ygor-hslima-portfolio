@@ -1,39 +1,24 @@
-
-
 #ficha {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to bottom, var(--fundo-principal), var(--fundo-secundario));
-
+    background-image: url('../../../assets/pexels-gashifrheza-1486121.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     backdrop-filter: blur(4px);
-    padding: 130px 100px; /* Padding para Desktop */
-
-
-    @media (max-width: 768px) {
-        padding: 50px 20px;
-    }
-
+    padding: 130px 100px;
 
     #content {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      width: 80%;
-      margin: 0px;
-      padding: 10px;
-      border-radius: 20px;
-      
-      /* Ajuste de #content para Mobile */
-      @media (max-width: 768px) {
-          flex-direction: column; /* Empilha verticalmente */
-          width: 100%; /* Ocupa a largura total */
-          align-items: center;
-      }
-      
-  
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: 0px;
+        padding: 10px;
+        border-radius: 20px;
 
       img.foto {
         width: 200px;
@@ -46,79 +31,68 @@
         margin: auto;
         margin-bottom: 20px;
         transition: 0.4s;
-        
-        /* Ajuste de img.foto para Mobile */
-        @media (max-width: 768px) {
-            width: 150px; /* Diminui o tamanho da foto */
-            margin-bottom: 10px;
-        }
+
       }
-      
-      img:hover{
+      img:hover {
         transform: scale(1.1);
         box-shadow: 1px 1px 20px black;
       }
 
-      .text{
+      .text {
         display: flex;
         flex-direction: column;
         width: 50%;
         gap: 10px;
         margin: 20px;
-        
-        /* Ajuste de .text para Mobile */
-        @media (max-width: 768px) {
-            width: 100%; /* Ocupa toda a largura */
-            margin: 10px 0;
-            text-align: center; /* Centraliza o texto */
-        }
 
-        h1{
+        h1 {
             color: var(--destaque);
             margin: 15px;
             font-size: 50px;
             text-align: left;
-            
-            /* Ajuste de h1 para Mobile */
-            @media (max-width: 768px) {
-                font-size: 30px; /* Diminui o título */
-                text-align: center; /* Centraliza o título */
-                margin: 10px 0;
-            }
         }
-        p{
-          line-height: 2.0em;
-          
-          /* Ajuste de p para Mobile */
-          @media (max-width: 768px) {
-              line-height: 1.5em; /* Torna o espaçamento mais compacto */
-          }
+
+        p {
+            line-height: 2.0em;
+            font-size: 20px;
+            color: white;
         }
       }
     }
 
 
-    #social {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 1.5em;
-      gap: 10px;
-      margin-top: 15px;
-      
-      /* Ajuste de #social para Mobile */
-      @media (max-width: 768px) {
-          margin-top: 10px;
-          font-size: 1.2em; 
-      }
-      
-      a{
-        color: var(--destaque);
-        transition: 0.5s;
-        &:hover {
-          color: var(--destaque-inverso);
-          transform: scale(1.3);
+    /* --- Agrupamento das Regras Mobile --- */
+    @media (max-width: 768px) {
+        #content {
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+
+            img.foto {
+                width: 150px;
+                margin-bottom: 10px;
+            }
+
+            .text {
+                width: 100%;
+                margin: 10px 0;
+                text-align: center;
+
+                h1 {
+                    font-size: 30px;
+                    text-align: center;
+                    margin: 10px 0;
+                }
+
+                p {
+                    line-height: 1.5em;
+                }
+            }
         }
-      }
+
+        #social {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
     }
 }

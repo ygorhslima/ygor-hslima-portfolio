@@ -1,46 +1,82 @@
 
+#formacao{
 
-.formacao-container{
-    
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 20px;
-    .curso{
-        background-color: var(--fundo-principal);
-        border-radius: 8px;
-        border-left: 5px solid var(--destaque);
-        padding-left: 15px;
-        transition: border-width 0.5s;
-        cursor: pointer;
+    h2{
+        text-align: center;
+    }
 
-        .curso_nome{
-            color: var(--destaque);
-            font-weight: bold;
+    .formacao-container{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+
+        .curso{
+            background-color: var(--fundo-principal);
+            border-radius: 8px;
+            border-left: 5px solid var(--destaque);
+            padding-left: 15px;
+            transition: border-width 0.5s;
+            cursor: pointer;
+            .curso_nome{
+                color: var(--destaque);
+                font-weight: bold;
+            }
+            .data_emissao{
+                color: var(--texto);
+            }
         }
-        .data_emissao{
+        
+        .curso:hover{
+            border-left-width: 15px;
+            border-color: var(--destaque);
+        }
+    
+    
+        .periodo{
+            font-size: 0.7em;
+            font-weight: bold;
             color: var(--texto);
         }
-    }
     
-    .curso:hover{
-        border-left-width: 15px;
-        border-color: var(--destaque);
+        .instituicao{
+            color: var(--destaque);
+            font-size: 1.1em;
+        }
+        
+        .titulacao{
+            color: var(--texto);  
+        }
+        
     }
 
+    .grid-formacao-certificados{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        align-content: center;
+        gap: 10px;
+        border-radius:10px;
 
-    .periodo{
-        font-size: 0.7em;
-        font-weight: bold;
-        color: var(--texto);
-    }
-
-    .instituicao{
-        color: var(--destaque);
-        font-size: 1.1em;
-    }
-    
-    .titulacao{
-        color: var(--texto);  
+        .certificados{
+            background-color: var(--fundo-principal);
+            border-radius: 8px;
+            border-left: 5px solid var(--destaque);
+            padding-left: 15px;
+            transition: border-width 0.5s;
+            cursor: pointer;
+        }
+        
+        .certificados:hover{
+            border-left-width: 15px;
+            border-color: var(--destaque);
+        }
     }
 }
 
+@media screen and (max-width: 768px) {
+    .grid-formacao-certificados{
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 1fr !important;
+    }
+}

@@ -109,14 +109,14 @@ export default function ArticleFormacao(){
             </div>
             <br />
             <h2><i className="fa-solid fa-graduation-cap"></i>Certificado</h2>
-            <div className="formacao-container">
+            <div className="grid-formacao-certificados">
                 {
                     listaCertificado.map(({ curso,instituicao,data_emissao,link },index)=>{
                         return(
-                            <div className="curso" key={index}>
-                                <div className="curso_nome">{curso}</div>
-                                <h3 className="instituicao">{instituicao}</h3>
-                                <p className="data_emissao">{data_emissao}</p>
+                            <div className="certificados" key={index}>
+                                <div>{curso}</div>
+                                <h3>{instituicao}</h3>
+                                <p>{data_emissao}</p>
                                 <Certificado curso={curso} link={link}/>
                             </div>
                         )
