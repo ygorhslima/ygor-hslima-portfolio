@@ -1,82 +1,56 @@
+#formacao {
+  h2 {
+    text-align: center;
+    margin-bottom: 20px; /* Adicionado para espaçamento */
+  }
 
-#formacao{
+  /* Agrupando estilos comuns para evitar repetição */
+  .curso, .certificados {
+    background-color: var(--fundo-principal);
+    border-radius: 8px;
+    border-left: 5px solid var(--destaque);
+    padding: 10px 15px;
+    transition: border-width 0.5s;
+    cursor: pointer;
 
-    h2{
-        text-align: center;
+    &:hover {
+      border-left-width: 15px;
+    }
+  }
+
+  .formacao-container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    margin-bottom: 20px;
+
+    .curso_nome {
+      color: var(--destaque);
+      font-weight: bold;
     }
 
-    .formacao-container{
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 20px;
-
-        .curso{
-            background-color: var(--fundo-principal);
-            border-radius: 8px;
-            border-left: 5px solid var(--destaque);
-            padding-left: 15px;
-            transition: border-width 0.5s;
-            cursor: pointer;
-            .curso_nome{
-                color: var(--destaque);
-                font-weight: bold;
-            }
-            .data_emissao{
-                color: var(--texto);
-            }
-        }
-        
-        .curso:hover{
-            border-left-width: 15px;
-            border-color: var(--destaque);
-        }
-    
-    
-        .periodo{
-            font-size: 0.7em;
-            font-weight: bold;
-            color: var(--texto);
-        }
-    
-        .instituicao{
-            color: var(--destaque);
-            font-size: 1.1em;
-        }
-        
-        .titulacao{
-            color: var(--texto);  
-        }
-        
+    .periodo {
+      font-size: 0.75em;
+      font-weight: bold;
+      color: var(--texto);
     }
 
-    .grid-formacao-certificados{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-content: center;
-        align-content: center;
-        gap: 10px;
-        border-radius:10px;
-
-        .certificados{
-            background-color: var(--fundo-principal);
-            border-radius: 8px;
-            border-left: 5px solid var(--destaque);
-            padding-left: 15px;
-            transition: border-width 0.5s;
-            cursor: pointer;
-        }
-        
-        .certificados:hover{
-            border-left-width: 15px;
-            border-color: var(--destaque);
-        }
+    .instituicao {
+      color: var(--destaque);
+      font-size: 1.1em;
     }
+  }
+
+  .grid-formacao-certificados {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Forma mais limpa de escrever */
+    gap: 10px;
+  }
 }
 
+/* Media Query mais limpo */
 @media screen and (max-width: 768px) {
-    .grid-formacao-certificados{
-        grid-template-columns: 1fr !important;
-        grid-template-rows: 1fr !important;
-    }
+  #formacao .grid-formacao-certificados {
+    grid-template-columns: 1fr; /* As linhas se ajustam automaticamente */
+  }
 }

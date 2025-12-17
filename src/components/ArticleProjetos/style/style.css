@@ -1,63 +1,58 @@
-#projetos{
-
-
-    h2{
-        font-size: 30px;
+#projetos {
+    h2 {
+        font-size: 2rem; /* Melhor usar rem que px para acessibilidade */
         margin-bottom: 20px;
         text-align: center;
     }
-    #projeto-container{
+
+    #projeto-container {
         display: grid;
-        grid-template-columns: repeat(2,0.4fr);
+        /* Substituído 0.4fr por algo mais estável */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
         justify-content: center;
         gap: 20px;
-    
-        .projeto{
+        max-width: 1000px; /* Limita a largura para os cards não ficarem gigantes */
+        margin: 0 auto;
+
+        .projeto {
             display: flex;
-            flex-direction:column;
+            flex-direction: column;
             gap: 15px;
             background-color: var(--fundo-principal);
-            padding: 10px;
+            padding: 15px;
             border-radius: 8px;
-            border-left:5px solid var(--destaque-inverso);
-            transition: border-color 0.7s, border-width 0.4s;
-    
+            border-left: 5px solid var(--destaque-inverso);
+            transition: 0.4s; /* Simplificado */
+
+            &:hover {
+                border-color: var(--destaque);
+                border-left-width: 15px;
+                cursor: pointer;
+            }
         }
-        .projeto:hover{
-            border-color: var(--destaque);
-            border-left-width: 15px;
-            cursor: pointer;
-        }
-    
-        .foto{
-            display: block;
+
+        .foto {
             width: 100%;
-            margin: auto;
             aspect-ratio: 16/9;
             object-fit: cover;
-            overflow: hidden;
-            border-radius:8px;
+            border-radius: 4px;
         }
     }
 }
 
+@media screen and (max-width: 768px) {
+    #projeto-container {
+        /* Remove o !important e deixa o grid fluir em 1 coluna */
+        grid-template-columns: 1fr; 
 
-@media screen and (max-width:768px) {
-    #projeto-container{
-        grid-template-columns: 1fr !important;
-        grid-template-rows: 1fr !important;
-        
-        .projeto{
-            flex-direction: row-reverse;
-            justify-content: space-between;
+        .projeto {
+            /* Se for manter row-reverse, ajuste as larguras */
+            flex-direction: column; /* Sugestão: manter coluna no mobile para não apertar */
+            gap: 10px;
         }
-        .projeto-info{
-            max-width: 80%;
-        }
-        .foto{
-            aspect-ratio: 1/1;
-            max-width: 100%;
-            max-height: 300px;
+
+        .foto {
+            max-height: 200px; /* Evita que a foto ocupe a tela toda */
         }
     }
 }
