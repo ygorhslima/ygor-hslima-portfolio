@@ -4,12 +4,7 @@
     align-items: center;
     justify-content: center;
 
-    background-image: url('../../../assets/pexels-gashifrheza-1486121.jpg');
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-
+  
     backdrop-filter: blur(4px);
     padding: 130px 100px;
 
@@ -63,6 +58,9 @@
       }
     }
 
+    .social a{
+        color: white !important;
+    }
 
     /* --- Agrupamento das Regras Mobile --- */
     @media (max-width: 768px) {

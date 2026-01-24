@@ -4,7 +4,6 @@ import "./style/style.css";
 import htmlImg from "../../assets/html5.svg";
 import cssImg from "../../assets/css3.svg";
 import jsImg from "../../assets/javascript.svg";
-import nodeImg from "../../assets/nodejs.svg";
 import mysqlImg from "../../assets/mysql.svg";
 import reactImg from "../../assets/react.svg";
 import gitImg from "../../assets/git.svg";

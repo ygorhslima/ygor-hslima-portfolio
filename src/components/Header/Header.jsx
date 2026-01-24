@@ -1,18 +1,5 @@
-import { useState, useEffect } from "react"
 import './style/style.css'
-export default function Header(){
-    
-    const [temaEscuro, setTemaEscuro] = useState(false)
-
-    useEffect(()=>{
-        if(temaEscuro){
-            document.body.classList.add("escuro")
-        }else{
-            document.body.classList.remove("escuro")
-        }
-    },[temaEscuro])
-
-    
+export default function Header({temaEscuro, setTemaEscuro}){    
     return(
         <header>
             <h1>Portfólio</h1>
@@ -42,10 +29,7 @@ export default function Header(){
                     </li>
                     <li>
                         <button id="botao-tema"
-                            onClick={()=>{
-                                setTemaEscuro(!temaEscuro)
-                            }}
-                        >{
+                        onClick={()=>setTemaEscuro(!temaEscuro)}>{
                             temaEscuro ? (
                                 <i className="fa-solid fa-sun"></i>
                             ):(
