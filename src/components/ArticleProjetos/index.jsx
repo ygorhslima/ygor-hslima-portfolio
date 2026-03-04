@@ -8,6 +8,7 @@ import sunnysideAgencyImg from '../../assets/img-Sunnyside-agency.png';
 import ageCalculatorImg from '../../assets/img-age-calculator-app-main.png';
 import blogrLandingPageImg from '../../assets/img-blogr-landing-page-main.png';
 import browserExtensionImg from '../../assets/img-browser-extension-main.png';
+import imgRestCountries from '../../assets/img-rest-countries-api.png'
 
 export default function ArticleProjetos(){
     const listaProjetos = [
@@ -67,6 +68,14 @@ export default function ArticleProjetos(){
             "descricaoDetalhada":"Mostra uma lista de extensões de navegador, onde o usuário pode ativar, desativar ou remover uma extensão, o usuário também pode filtrar as extensões que  está usando e o que não está usando e deixar de sua preferência modo escuro ou modo claro ",
             "link":"https://ygorhslima.github.io/browser-extension-manager-ui-site/"
         },
+        {
+            "imagemProjeto":`${imgRestCountries}`,
+            "periodo":"2026",
+            "titulo":"Rest Countries Api",
+            "descricao":"é uma API que retorna todos os países do mundo",
+            "descricaoDetalhada":"Mostra uma lista de países, onde é possível ver detalhes de informações sobre o país, como nome nativo, população, região, subregião, Capital etc. e filtrar paises por regiões e pesquisar o nome do país específico",
+            "link":"https://ygorhslima.github.io/frontend-mentor-exercises-2/rest-countries-api-with-color-theme-switcher-master/"
+        }
     ];
     
     return (
