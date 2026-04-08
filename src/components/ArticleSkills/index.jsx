@@ -4,12 +4,10 @@ import "./style/style.css";
 import htmlImg from "../../assets/html5.svg";
 import cssImg from "../../assets/css3.svg";
 import jsImg from "../../assets/javascript.svg";
+import tsImg from '../../assets/typescript.svg';
 import mysqlImg from "../../assets/mysql.svg";
 import reactImg from "../../assets/react.svg";
 import gitImg from "../../assets/git.svg";
-import githubImg from "../../assets/github.svg";
-import officeImg from "../../assets/office.svg";
-import windowsImg from "../../assets/windows.svg";
 import linuxImg from "../../assets/linux.svg";
 import Csharp from "../../assets/csharp.svg";
 import dotnet from "../../assets/dotnet.svg";
@@ -29,6 +27,11 @@ const listaHardSkills = [
     img: `${jsImg}`,
     text: "JavaScript",
     link: "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
+  },
+  {
+    img: `${tsImg}`,
+    text: "TypeScript",
+    link: "https://www.typescriptlang.org/docs/"  
   },
   {
     img: `${reactImg}`,
@@ -54,21 +57,6 @@ const listaHardSkills = [
     img: `${gitImg}`,
     text: "Git",
     link: "https://git-scm.com/docs/git/pt_BR",
-  },
-  {
-    img: `${githubImg}`,
-    text: "Github",
-    link: "https://github.com/",
-  },
-  {
-    img: `${officeImg}`,
-    text: "Pacote Office",
-    link: "https://www.microsoft.com/pt-br/microsoft-365",
-  },
-  {
-    img: `${windowsImg}`,
-    text: "Windows",
-    link: "https://www.microsoft.com/pt-br/windows/?r=1",
   },
   {
     img: `${linuxImg}`,
