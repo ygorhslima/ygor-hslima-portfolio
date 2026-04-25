@@ -1,18 +1,28 @@
 :root {
-  --fundo-principal: #f8fafc;
-  --fundo-secundario: #f1f5f9;
-  --texto: #334155;
+  /* Tons de fundo mais limpos */
+  --fundo-principal: #ffffff;      /* Branco puro para brilho */
+  --fundo-secundario: #edeeef;     /* Azulado bem leve para áreas de apoio */
+  
+  /* Tipografia com melhor legibilidade (menos cinza, mais contraste) */
+  --texto: #0f172a;                /* Azul marinho profundo quase preto */
+  --texto-suave: #64748b;          /* Para textos secundários */
   --texto-inverso: #ffffff;
-  --destaque: #2563eb;
-  --destaque-inverso: #dbeafe; 
-  --fundo-card: rgb(243, 243, 243);
-  --header: rgba(255, 255, 250, 0.8);
-  --aside: #16223a;
+  
+  /* Cores de Destaque (Brand) */
+  --destaque: #4f46e5;             /* Indigo vibrante (mais moderno que o azul padrão) */
+  --destaque-hover: #4338ca;
+  --destaque-inverso: #eef2ff;     /* Fundo para badges ou botões suaves */
+  
+  /* Componentes */
+  --fundo-card: #ffffff;
+  --borda-card: #e2e8f0;           /* Essencial para separar card do fundo */
+  --header: rgba(255, 255, 255, 0.85);
+  --aside: #1e293b;
 }
 
 .escuro {
   --fundo-principal: #0f172a;
-  --fundo-secundario: #1e293b;
+  --fundo-secundario: #1c222b;
   --texto: #f8fafc;
   --texto-inverso: #0f172a;
   --destaque: #38bdf8;
@@ -84,13 +94,13 @@ article h2 {
 }
 
 .social a {
-  color: var(--texto-inverso);
+  color: var(--destaque);
   font-size: 1.5em;
   transition: transform 0.3s, color 0.3s;
 }
 
 .social a:hover {
-  color: var(--destaque-inverso);
+  color: var(--destaque);
   transform: scale(1.2);
 }
 

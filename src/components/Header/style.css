@@ -35,13 +35,5 @@ a:hover{
 }
 
 .menu-hambuguer{
-    display: none;   
-}
-@media screen and (max-width: 768px) {
-    .menu-hambuguer{
-        display: block;
-    }
-    #menu{
-        display: none;
-    }
+    display: block;   
 }

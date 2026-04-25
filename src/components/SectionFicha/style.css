@@ -6,7 +6,7 @@
 
   
     backdrop-filter: blur(4px);
-    padding: 130px 100px;
+    padding: 80px;
 
     #content {
         display: flex;
@@ -56,10 +56,6 @@
             color: white;
         }
       }
-    }
-
-    .social a{
-        color: white !important;
     }
 
     /* --- Agrupamento das Regras Mobile --- */

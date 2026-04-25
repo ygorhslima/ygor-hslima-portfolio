@@ -1,6 +1,6 @@
 import './style.css'
 
-export default function SideBar({ isOpen, temaEscuro, setTemaEscuro}) {
+export default function SideBar({ isOpen }) {
   return (
     <div className={`sidebar ${isOpen ? "open" : "closed"}`}>
         <a href="#" className="link">
@@ -22,20 +22,6 @@ export default function SideBar({ isOpen, temaEscuro, setTemaEscuro}) {
             <i className="fa-solid fa-trowel-bricks"></i>
             <p>Projetos</p>
         </a>
-
-        <button id="botao-tema" onClick={() => setTemaEscuro(!temaEscuro)}>
-            {temaEscuro ? (
-                <>
-                    <i className="fa-solid fa-sun"></i>
-                    <p>Modo Claro</p>
-                </>
-            ) : (
-                <>
-                    <i className="fa-solid fa-moon"></i>
-                    <p>Modo Escuro</p>
-                </>
-            )}
-        </button>
     </div>
   );
 }

@@ -12,9 +12,7 @@ export default function LayoutWrapper() {
   return (
     <div className="layout-wrapper">
       <SideBar 
-        isOpen={isSideBarOpen} 
-        temaEscuro={temaEscuro}
-        setTemaEscuro={setTemaEscuro}
+        isOpen={isSideBarOpen}
       />
       <div className="wrapper">
         <Header

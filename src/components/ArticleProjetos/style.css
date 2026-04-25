@@ -1,58 +1,77 @@
-#projetos {
-    h2 {
-        font-size: 2rem; /* Melhor usar rem que px para acessibilidade */
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    #projeto-container {
-        display: grid;
-        /* Substituído 0.4fr por algo mais estável */
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-        justify-content: center;
-        gap: 20px;
-        max-width: 1000px; /* Limita a largura para os cards não ficarem gigantes */
-        margin: 0 auto;
-
-        .projeto {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            background-color: var(--fundo-principal);
-            padding: 15px;
-            border-radius: 8px;
-            border-left: 5px solid var(--destaque-inverso);
-            transition: 0.4s; /* Simplificado */
-
-            &:hover {
-                border-color: var(--destaque);
-                border-left-width: 15px;
-                cursor: pointer;
-            }
-        }
-
-        .foto {
-            width: 100%;
-            aspect-ratio: 16/9;
-            object-fit: cover;
-            border-radius: 4px;
-        }
-    }
+/* Seletores Principais */
+#projetos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
+#projetos #projeto-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Estilização dos Cards */
+#projeto-container .projeto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+.projeto a .wrap-img-titulo{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 4px;
+    filter: brightness(0.3);
+    transition: transform 0.7s cubic-bezier(0.25, 1, 0.5, 1), filter 0.7s ease;
+}
+.projeto a .wrap-img-titulo:hover{
+    transform: scale(1.08); /* Um valor menor costuma parecer mais elegante */
+    filter: brightness(1);
+}
+
+/* Imagens dos Projetos */
+.projeto a .wrap-img-titulo .foto {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.projeto a .wrap-img-titulo .titulo-link{
+    position:relative;
+    top: -140px;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+
+/* Media Query para Responsividade */
 @media screen and (max-width: 768px) {
     #projeto-container {
-        /* Remove o !important e deixa o grid fluir em 1 coluna */
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
+    }
 
-        .projeto {
-            /* Se for manter row-reverse, ajuste as larguras */
-            flex-direction: column; /* Sugestão: manter coluna no mobile para não apertar */
-            gap: 10px;
-        }
+    #projeto-container .projeto{
+        flex-direction: column;
+        gap: 10px;
+    }
 
-        .foto {
-            max-height: 200px; /* Evita que a foto ocupe a tela toda */
-        }
+    .projeto a {
+        width: 100%;
+    }
+
+    .projeto a .wrap-img-titulo {
+        width: 100%;
+    }
+
+    .projeto a .wrap-img-titulo .foto {
+        max-height: 200px;
     }
 }
