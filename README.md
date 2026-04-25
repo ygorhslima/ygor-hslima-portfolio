@@ -18,7 +18,7 @@ Este documento detalha a evolução do meu portfólio, as tecnologias implementa
 
 ## [v1.0.0] - Janeiro 2026
 - **Certificados:** Criação de componente de Modal para visualização de PDFs de certificados sem sair do site.
-- **Lógica inicial para o Modo Dark**: a partir do uso do useEffect alterando a classe de escuro para claro depenendo do estado
+- **Lógica inicial para o Modo Dark**: a partir do uso do useEffect alterando a classe de escuro para claro dependendo do estado
 - **estilização dos componentes**: aqui foquei em transições suaves em componentes
 
 ## [v.alpha] - Dezembro 2025
