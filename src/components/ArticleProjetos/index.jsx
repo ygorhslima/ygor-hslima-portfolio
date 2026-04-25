@@ -1,4 +1,4 @@
-import "./style/style.css";
+import "./style.css";
 
 // Importando as imagens dos projetos
 import bookmarkLandingPageImg from "../../assets/img-bookmark-landing-page.png";

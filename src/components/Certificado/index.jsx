@@ -1,5 +1,5 @@
 import { useState } from "react"
-import './style/style.css'
+import './style.css'
 
 export default function Certificado(props){
     const [mostrarPDF, setMostrarPDF] = useState(false);

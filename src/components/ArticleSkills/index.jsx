@@ -1,4 +1,4 @@
-import "./style/style.css";
+import "./style.css";
 
 // 1. Importando os ícones (ajuste o caminho se a pasta assets estiver em outro nível)
 import htmlImg from "../../assets/html5.svg";

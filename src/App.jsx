@@ -1,34 +1,19 @@
-import Header from './components/Header/Header.jsx';
-import MainComponent from './components/MainComponent.jsx'
-import SectionFicha from './components/SectionFicha';
-import SectionDetalhes from './components/SectionDetalhes';
-import Footer from './components/Footer';
-import { useEffect, useState } from 'react';
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import Home from "./page/Home";
+import LayoutWrapper from "./layout/layoutWrapper";
+import { ThemeProvider } from "./context/ThemeContext";
 
-
-
-function App() {
-  
-  const [temaEscuro, setTemaEscuro] = useState(false)
-
-  useEffect(()=>{
-      if(temaEscuro){
-          document.body.classList.add("escuro")
-      }else{
-          document.body.classList.remove("escuro")
-      }
-  },[temaEscuro])
-
+export default function App() {
   return (
-    <div>
-      <Header temaEscuro={temaEscuro} setTemaEscuro={setTemaEscuro}/>
-      <MainComponent>
-        <SectionFicha temaEscuro={temaEscuro}/>
-        <SectionDetalhes/>
-      </MainComponent>
-      <Footer/>
-    </div>
-  )
+    <ThemeProvider>
+      <BrowserRouter basename="/ygor-hslima-portfolio">
+        <Routes>
+          <Route path="/" element={<Navigate to="/home" />} />
+          <Route element={<LayoutWrapper />}>
+            <Route path="/home" element={<Home />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
+  );
 }
-
-export default App

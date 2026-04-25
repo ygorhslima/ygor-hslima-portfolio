@@ -1,7 +1,7 @@
-import "./style/style.css";
+import "./style.css";
 
 import imgPerfil from "../../assets/img-perfil.jpg";
-import curriculo from "./curriculo2.pdf";
+import curriculo from "./Curriculo_Ygor_Lima_Desenvolvedor_Web.pdf";
 import WallpaperDia from "../../assets/wallpaper-dia.jpg";
 import WallpaperNoite from "../../assets/wallpaper-noite.png";
 
@@ -27,9 +27,9 @@ export default function SectionFicha({ temaEscuro }) {
           </p>
         </div>
       </div>
-      
+
       <br />
-      
+
       <div className="social">
         <a
           href="https://www.linkedin.com/in/ygor-henrique-888543300"

@@ -1,5 +1,5 @@
 import Certificado from '../Certificado'
-import './style/style.css'
+import './style.css'
 
 // Importando os PDFs (isso garante que o build encontre os arquivos)
 import AlgoritmoPDF from '../../assets/algoritmo.pdf';
