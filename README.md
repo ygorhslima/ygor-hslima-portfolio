@@ -1,16 +1,43 @@
-# React + Vite
+# 🚀 Histórico de Versões - Portfólio Ygor Henrique
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este documento detalha a evolução do meu portfólio, as tecnologias implementadas e as melhorias em cada etapa do desenvolvimento.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## [v3.0.0] - Março/Abril 2026 (Versão Atual)
 
-## React Compiler
+- **mudança geral no layout**: estruturei o layout do site, criando o layoutWrapper que engloba o header, o sidebar e o main (que engloba todos os componentes do site),
+- **Mobile First:** criação de `Sidebar` interativa e Menu Hambúrguer para dispositivos móveis.
+- **SEO e Performance:** Otimização de tags semânticas e carregamento de assets.
+- **Roteamento:** Implementação do `react-router-dom` para gerenciar a navegação entre `/home` e outras rotas futuras dentro do site.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+## [v2.0.0] - Fevereiro 2026
+- **wallpaper dinâmico**: na seção ficha, implementei a funcionalidade de wallpaper dinâmico ao clicar no botão de mudar tema
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## [v1.0.0] - Janeiro 2026
+- **Certificados:** Criação de componente de Modal para visualização de PDFs de certificados sem sair do site.
+- **Lógica inicial para o Modo Dark**: a partir do uso do useEffect alterando a classe de escuro para claro depenendo do estado
+- **estilização dos componentes**: aqui foquei em transições suaves em componentes
+
+## [v.alpha] - Dezembro 2025
+- **Lançamento Inicial:** Estrutura básica do projeto
+- **Componentes principais:** Sobre mim, Formação, Projetos e Contato.
+- **Hospedagem:** Deploy inicial no GitHub Pages.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **Frontend:** React.js, JavaScript (ES6+), HTML5, CSS3.
+- **Navegação:** React Router.
+- **Ícones:** FontAwesome, Lucide Icons.
+- **Design:** Design Responsivo (Mobile First), Dark Mode.
+
+## 📈 Próximos Passos (Backlog)
+- [ ] Criar uma nova aba de blogs
+- [ ] Adicionar suporte a múltiplos idiomas (I18n).
+
+---
+*Documentação atualizada em: Abril de 2025.*
