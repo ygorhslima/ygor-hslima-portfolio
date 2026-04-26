@@ -11,9 +11,7 @@ export default function LayoutWrapper() {
   const onToggleMenu = () => setIsSideBarOpen(!isSideBarOpen);
   return (
     <div className="layout-wrapper">
-      <SideBar 
-        isOpen={isSideBarOpen}
-      />
+      <SideBar isOpen={isSideBarOpen} />
       <div className="wrapper">
         <Header
           temaEscuro={temaEscuro}
