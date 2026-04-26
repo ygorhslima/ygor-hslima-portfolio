@@ -5,7 +5,8 @@
   }
 
   /* Agrupando estilos comuns para evitar repetição */
-  .curso, .certificados {
+  .curso,
+  .certificados {
     background-color: var(--fundo-principal);
     border-radius: 8px;
     border-left: 5px solid var(--destaque);

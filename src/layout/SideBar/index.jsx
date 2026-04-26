@@ -16,7 +16,7 @@ export default function SideBar({ isOpen }) {
         <a href="#formacao" className="link">
             <i className="fa-solid fa-graduation-cap"></i>
             <p>Formação</p>
-        </a>
+        </a>br
 
         <a href="#projetos" className="link">
             <i className="fa-solid fa-trowel-bricks"></i>
