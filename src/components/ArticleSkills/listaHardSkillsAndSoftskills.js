@@ -1,4 +1,3 @@
-// 1. Importando os ícones (ajuste o caminho se a pasta assets estiver em outro nível)
 import htmlImg from "../../assets/html5.svg";
 import cssImg from "../../assets/css3.svg";
 import jsImg from "../../assets/javascript.svg";
@@ -8,7 +7,8 @@ import reactImg from "../../assets/react.svg";
 import gitImg from "../../assets/git.svg";
 import linuxImg from "../../assets/linux.svg";
 import Csharp from "../../assets/csharp.svg";
-import dotnet from "../../assets/dotnet.svg";
+import dockerImg from '../../assets/docker.svg';
+
 
 export const listaHardSkills = [
   {
@@ -42,11 +42,6 @@ export const listaHardSkills = [
     link: "https://learn.microsoft.com/pt-br/dotnet/csharp/",
   },
   {
-    img: `${dotnet}`,
-    text: ".NET",
-    link: "https://learn.microsoft.com/pt-br/dotnet/",
-  },
-  {
     img: `${mysqlImg}`,
     text: "MySQL",
     link: "https://dev.mysql.com/doc/",
@@ -61,6 +56,11 @@ export const listaHardSkills = [
     text: "Linux",
     link: "https://www.linux.org/",
   },
+  {
+    img: `${dockerImg}`,
+    text: "Docker",
+    link:"https://docs.docker.com/"
+  }
 ];
 
 export const listaSoftSkills = [

@@ -1,8 +1,9 @@
 import { Outlet } from "react-router-dom";
-import Header from "../../components/Header/";
+import Header from "../Header";
 import SideBar from "../SideBar";
 import { useState } from "react";
 import { useTheme } from "../../context/ThemeContext";
+import Footer from "../Footer";
 
 export default function LayoutWrapper() {
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
@@ -21,6 +22,7 @@ export default function LayoutWrapper() {
         <main>
           <Outlet />
         </main>
+        <Footer/>
       </div>
     </div>
   );

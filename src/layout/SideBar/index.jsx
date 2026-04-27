@@ -1,27 +1,19 @@
+import { Link } from "react-router-dom";
 import "./style.css";
+import { PAGES } from "../../constant";
 
 export default function SideBar({ isOpen }) {
   return (
     <div className={`sidebar ${isOpen ? "open" : "closed"}`}>
-      <a href="#" className="link">
+      <Link to={PAGES.HOME} className="link">
         <i className="fa-solid fa-house"></i>
         <p>Home</p>
-      </a>
+      </Link>
 
-      <a href="#skills" className="link">
-        <i className="fa-solid fa-brain"></i>
-        <p>Skills</p>
-      </a>
-
-      <a href="#formacao" className="link">
-        <i className="fa-solid fa-graduation-cap"></i>
-        <p>Formação</p>
-      </a>
-
-      <a href="#projetos" className="link">
-        <i className="fa-solid fa-trowel-bricks"></i>
-        <p>Projetos</p>
-      </a>
+      <Link to={PAGES.BLOG} className="link">
+        <i className="fa-solid fa-blog"></i>
+        <p>Blog</p>
+      </Link>
     </div>
   );
 }

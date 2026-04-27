@@ -21,8 +21,8 @@ export default function ArticleSkills() {
                 rel="noopener noreferrer"
               >
                 <img src={img} alt={text} width={40} height={40} />
+                <div className="skill">{text}</div>
               </a>
-              <div className="skill">{text}</div>
             </div>
           ))}
         </div>
