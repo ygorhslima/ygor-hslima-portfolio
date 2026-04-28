@@ -1,11 +1,11 @@
-import bookmarkLandingPageImg from "../../assets/img-bookmark-landing-page.png";
-import spaceTourismImg from "../../assets/img-Space-tourism-website.png";
-import dropdownNavigationImg from "../../assets/img-SectionDropdownNavigation.png";
-import sunnysideAgencyImg from "../../assets/img-Sunnyside-agency.png";
-import ageCalculatorImg from "../../assets/img-age-calculator-app-main.png";
-import blogrLandingPageImg from "../../assets/img-blogr-landing-page-main.png";
-import browserExtensionImg from "../../assets/img-browser-extension-main.png";
-import imgRestCountries from "../../assets/img-rest-countries-api.png";
+import bookmarkLandingPageImg from "../assets/imgs/img-bookmark-landing-page.png";
+import spaceTourismImg from "../assets/imgs/img-Space-tourism-website.png";
+import dropdownNavigationImg from "../assets/imgs/img-SectionDropdownNavigation.png";
+import sunnysideAgencyImg from "../assets/imgs/img-Sunnyside-agency.png";
+import ageCalculatorImg from "../assets/imgs/img-age-calculator-app-main.png";
+import blogrLandingPageImg from "../assets/imgs/img-blogr-landing-page-main.png";
+import browserExtensionImg from "../assets/imgs/img-browser-extension-main.png";
+import imgRestCountries from "../assets/imgs/img-rest-countries-api.png";
 
 export const listaProjetos = [
   {

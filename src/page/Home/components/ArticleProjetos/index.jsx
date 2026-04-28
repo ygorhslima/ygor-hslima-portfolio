@@ -1,7 +1,7 @@
 import "./style.css";
 
 // Importando as imagens dos projetos
-import { listaProjetos } from "./listaProjetos";
+import { listaProjetos } from "../../../../../utils/listaProjetos";
 
 export default function ArticleProjetos() {
   return (

@@ -1,4 +1,4 @@
-import SectionFicha from "../../components/SectionFicha";
+import SectionFicha from "../Home/components/SectionFicha";
 
 export default function Blog(){
     return(

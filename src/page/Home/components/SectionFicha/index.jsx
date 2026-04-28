@@ -1,9 +1,9 @@
 import "./style.css";
 
-import imgPerfil from "../../assets/img-perfil.jpg";
+import imgPerfil from "../../../../../assets/imgs/img-perfil.jpg";
 import curriculo from "./Curriculo_Ygor_Lima_Desenvolvedor_Web.pdf";
-import WallpaperDia from "../../assets/wallpaper-day.jpg";
-import WallpaperNoite from "../../assets/wallpaper-night.jpg";
+import WallpaperDia from "../../../../../assets/imgs/wallpaper-dia.jpg"
+import WallpaperNoite from "../../../../../assets/imgs/wallpaper-night.jpg";
 
 export default function SectionFicha({ temaEscuro }) {
   return (

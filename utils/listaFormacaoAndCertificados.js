@@ -1,14 +1,14 @@
 // Importando os PDFs (isso garante que o build encontre os arquivos)
-import AlgoritmoPDF from "../../assets/algoritmo.pdf";
-import MysqlPDF from "../../assets/mysql.pdf";
-import HtmlCss1PDF from "../../assets/html-css-modulo1.pdf";
-import HtmlCss2PDF from "../../assets/html-css-modulo2.pdf";
-import HtmlCss3PDF from "../../assets/html-css-modulo3.pdf";
-import HtmlCss4PDF from "../../assets/html-css-modulo4.pdf";
-import JavascriptPDF from "../../assets/javascript.pdf";
-import LinuxPDF from "../../assets/linux.pdf";
-import SeoPDF from "../../assets/seo.pdf";
-import Ingles1PDF from "../../assets/ingles1.pdf";
+import AlgoritmoPDF from "../assets/pdfs/algoritmo.pdf";
+import MysqlPDF from "../assets/pdfs/mysql.pdf";
+import HtmlCss1PDF from "../assets/pdfs/html-css-modulo1.pdf";
+import HtmlCss2PDF from "../assets/pdfs/html-css-modulo2.pdf";
+import HtmlCss3PDF from "../assets/pdfs/html-css-modulo3.pdf";
+import HtmlCss4PDF from "../assets/pdfs/html-css-modulo4.pdf";
+import JavascriptPDF from "../assets/pdfs/javascript.pdf";
+import LinuxPDF from "../assets/pdfs/linux.pdf";
+import SeoPDF from "../assets/pdfs/seo.pdf";
+import Ingles1PDF from "../assets/pdfs/ingles1.pdf";
 
 export const listaFormacao = [
   {

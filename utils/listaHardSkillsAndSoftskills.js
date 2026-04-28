@@ -1,13 +1,13 @@
-import htmlImg from "../../assets/html5.svg";
-import cssImg from "../../assets/css3.svg";
-import jsImg from "../../assets/javascript.svg";
-import tsImg from "../../assets/typescript.svg";
-import mysqlImg from "../../assets/mysql.svg";
-import reactImg from "../../assets/react.svg";
-import gitImg from "../../assets/git.svg";
-import linuxImg from "../../assets/linux.svg";
-import Csharp from "../../assets/csharp.svg";
-import dockerImg from '../../assets/docker.svg';
+import htmlImg from "../assets/svgs/html5.svg";
+import cssImg from "../assets/svgs/css3.svg";
+import jsImg from "../assets/svgs/javascript.svg";
+import tsImg from "../assets/svgs/typescript.svg";
+import mysqlImg from "../assets/svgs/mysql.svg";
+import reactImg from "../assets/svgs/react.svg";
+import gitImg from "../assets/svgs/git.svg";
+import linuxImg from "../assets/svgs/linux.svg";
+import Csharp from "../assets/svgs/csharp.svg";
+import dockerImg from '../assets/svgs/docker.svg';
 
 
 export const listaHardSkills = [

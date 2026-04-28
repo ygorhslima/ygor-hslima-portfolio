@@ -1,6 +1,6 @@
 import "./style.css";
-import { listaHardSkills } from "./listaHardSkillsAndSoftskills";
-import { listaSoftSkills } from "./listaHardSkillsAndSoftskills";
+import { listaHardSkills } from "../../../../../utils/listaHardSkillsAndSoftskills";
+import { listaSoftSkills } from "../../../../../utils/listaHardSkillsAndSoftskills";
 
 export default function ArticleSkills() {
   return (
@@ -10,6 +10,7 @@ export default function ArticleSkills() {
       </h2>
       <div id="skill-container">
         <h2>Hardskills</h2>
+
         <div className="container-hardskills">
           {listaHardSkills.map(({ img, text, link }, index) => (
             // key está no elemento pai
@@ -29,6 +30,7 @@ export default function ArticleSkills() {
 
         {/* --- SOFT SKILLS --- */}
         <h2>Softskills</h2>
+
         <div className="container-softskills">
           {
             // CORRIGIDO: Adicionado a key na div de nível superior
