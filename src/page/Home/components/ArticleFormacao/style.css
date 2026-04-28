@@ -1,53 +1,73 @@
+/* --- Variáveis e Reset de Escopo --- */
+#formacao {
+  --spacing-section: 20px;
+  --transition-default: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* --- Títulos --- */
 #formacao h2 {
   text-align: center;
-  margin-bottom: 20px; /* Adicionado para espaçamento */
+  margin-bottom: var(--spacing-section);
 }
 
-#formacao .certificados {
-  background-color: var(--fundo-principal);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-#formacao .certificados:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  border-color: var(--destaque); /* Apenas brilha a borda fina */
-}
-
-.formacao-container {
+/* --- Layout dos Containers --- */
+#formacao .formacao-container {
   display: flex;
   flex-direction: column-reverse;
-  gap: 20px;
-  margin-bottom: 20px;
-}
-.formacao-container .curso_nome {
-  color: var(--destaque);
-  font-weight: bold;
-}
-.formacao-container .periodo {
-  font-size: 0.75em;
-  font-weight: bold;
-  color: var(--texto);
-}
-.formacao-container .instituicao {
-  color: var(--destaque);
-  font-size: 1.1em;
+  gap: var(--spacing-section);
+  margin-bottom: var(--spacing-section);
 }
 
 .grid-formacao-certificados {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Forma mais limpa de escrever */
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
 
-/* Media Query mais limpo */
+/* --- Cartões (Curso e Certificado) --- */
+/* Estilos compartilhados entre os itens de formação e certificados */
+#formacao .curso, 
+.certificados {
+  background-color: var(--fundo-principal);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: var(--transition-default);
+}
+
+/* --- Estados Interativos --- */
+#formacao .curso:hover, 
+.certificados:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-color: var(--destaque);
+}
+
+/* --- Tipografia e Elementos Internos --- */
+/* Período (Data) */
+#formacao .periodo {
+  font-size: 0.75em;
+  font-weight: bold;
+  color: var(--texto);
+}
+
+/* Instituição (Destaque principal) */
+#formacao .instituicao {
+  color: var(--destaque);
+  font-size: 1.1em;
+}
+
+/* Nome do Curso (Opcional/Específico) */
+#formacao .curso_nome {
+  color: var(--destaque);
+  font-weight: bold;
+}
+
+/* --- Responsividade --- */
 @media screen and (max-width: 768px) {
-  #formacao .grid-formacao-certificados {
-    grid-template-columns: 1fr; /* As linhas se ajustam automaticamente */
+  .grid-formacao-certificados {
+    grid-template-columns: 1fr;
   }
 }
