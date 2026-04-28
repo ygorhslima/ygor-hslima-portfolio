@@ -9,7 +9,7 @@ import imgRestCountries from "../assets/imgs/img-rest-countries-api.png";
 
 export const listaProjetos = [
   {
-    imagemProjeto: `${bookmarkLandingPageImg}`,
+    imagemProjeto: bookmarkLandingPageImg,
     periodo: "2025",
     titulo: "bookmark landing page",
     descricao:
@@ -19,7 +19,7 @@ export const listaProjetos = [
     link: "https://ygorhslima.github.io/bookmark-landing-page/",
   },
   {
-    imagemProjeto: `${spaceTourismImg}`,
+    imagemProjeto: spaceTourismImg,
     periodo: "2025",
     titulo: "Space Tourism Website",
     descricao: "é um site interativo de uma agência espacial",
@@ -28,7 +28,7 @@ export const listaProjetos = [
     link: "https://ygorhslima.github.io/frontend-mentor-exercises/space-tourism-website-figma/src/index.html",
   },
   {
-    imagemProjeto: `${dropdownNavigationImg}`,
+    imagemProjeto: dropdownNavigationImg,
     periodo: "2025",
     titulo: "Section With Dropdown Navigation",
     descricao:
@@ -38,7 +38,7 @@ export const listaProjetos = [
     link: "https://ygorhslima.github.io/frontend-mentor-exercises/intro-section-with-dropdown-navigation-main/intro-section-with-dropdown-navigation-main/index.html",
   },
   {
-    imagemProjeto: `${sunnysideAgencyImg}`,
+    imagemProjeto: sunnysideAgencyImg,
     periodo: "2025",
     titulo: "Sunnyside Agency Landing Page",
     descricao:
@@ -48,7 +48,7 @@ export const listaProjetos = [
     link: "https://ygorhslima.github.io/frontend-mentor-exercises/sunnyside-agency-landing-page-main/",
   },
   {
-    imagemProjeto: `${ageCalculatorImg}`,
+    imagemProjeto: ageCalculatorImg,
     periodo: "2025",
     titulo: "Age Calculador App Main",
     descricao: "Um applicativo que calcula a idade do usuário",
@@ -57,7 +57,7 @@ export const listaProjetos = [
     link: "https://ygorhslima.github.io/frontend-mentor-exercises/age-calculator-app-main/",
   },
   {
-    imagemProjeto: `${blogrLandingPageImg}`,
+    imagemProjeto: blogrLandingPageImg,
     periodo: "2025",
     titulo: "Blogr Landing Page",
     descricao: "Um site de publicidade de plataforma ",
@@ -66,7 +66,7 @@ export const listaProjetos = [
     link: "https://ygorhslima.github.io/frontend-mentor-exercises/blogr-landing-page-main/",
   },
   {
-    imagemProjeto: `${browserExtensionImg}`,
+    imagemProjeto: browserExtensionImg,
     periodo: "2025",
     titulo: "Browser Extension Main",
     descricao: "Um site de extensões de navegador",
@@ -75,7 +75,7 @@ export const listaProjetos = [
     link: "https://ygorhslima.github.io/frontend-mentor-exercises/browser-extension-manager-ui-site-main/",
   },
   {
-    imagemProjeto: `${imgRestCountries}`,
+    imagemProjeto: imgRestCountries,
     periodo: "2026",
     titulo: "Rest Countries Api",
     descricao: "é uma API que retorna todos os países do mundo",

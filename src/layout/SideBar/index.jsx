@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./style.css";
-import { PAGES } from "../../../constants/pages";
+import { PAGES } from "../../core/constants/pages";
 
 export default function SideBar({ isOpen }) {
   return (

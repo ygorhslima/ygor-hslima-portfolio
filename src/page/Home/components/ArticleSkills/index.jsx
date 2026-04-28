@@ -1,6 +1,6 @@
 import "./style.css";
-import { listaHardSkills } from "../../../../../utils/listaHardSkillsAndSoftskills";
-import { listaSoftSkills } from "../../../../../utils/listaHardSkillsAndSoftskills";
+import { listaHardSkills } from "@core/utils/listaHardSkillsAndSoftskills";
+import { listaSoftSkills } from "@core/utils/listaHardSkillsAndSoftskills";
 
 export default function ArticleSkills() {
   return (

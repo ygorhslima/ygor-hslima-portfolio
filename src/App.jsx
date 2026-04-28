@@ -4,7 +4,7 @@ import LayoutWrapper from "./layout/layoutWrapper";
 import { ThemeProvider } from "./context/ThemeContext";
 import Blog from "./page/Blog";
 
-import { PAGES } from "../constants/pages";
+import { PAGES } from "./core/constants/pages";
 
 export default function App() {
   return (

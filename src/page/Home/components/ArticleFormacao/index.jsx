@@ -1,7 +1,7 @@
 import Certificado from "../Certificado";
 import "./style.css";
-import { listaFormacao } from "../../../../../utils/listaFormacaoAndCertificados";
-import { listaCertificado } from "../../../../../utils/listaFormacaoAndCertificados";
+import { listaFormacao } from "../../../../core/utils/listaFormacaoAndCertificados";
+import { listaCertificado } from "../../../../core/utils/listaFormacaoAndCertificados";
 
 export default function ArticleFormacao() {
   return (
