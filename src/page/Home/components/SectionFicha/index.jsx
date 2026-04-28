@@ -1,10 +1,11 @@
 import "./style.css";
 
 // Ajuste os nomes dos arquivos conforme o que você tem na pasta imgs e pdfs
-import imgPerfil from "../../../../core/assets/imgs/img-perfil.jpg"; 
-import curriculo from "./Curriculo_Ygor_Lima_Desenvolvedor_Web.pdf";
-import WallpaperDia from "../../../../core/assets/imgs/wallpaper-dia.jpg";
+import imgPerfil from "../../../../core/assets/imgs/img-perfil.jpg";
+import WallpaperDia from "../../../../core/assets/imgs/wallpaper-day.jpg";
 import WallpaperNoite from "../../../../core/assets/imgs/wallpaper-night.jpg";
+
+import curriculo from "./Curriculo_Ygor_Lima_Desenvolvedor_Web.pdf";
 
 export default function SectionFicha({ temaEscuro }) {
   return (

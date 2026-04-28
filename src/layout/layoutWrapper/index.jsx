@@ -22,7 +22,7 @@ export default function LayoutWrapper() {
         <main>
           <Outlet />
         </main>
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );
