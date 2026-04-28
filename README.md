@@ -40,4 +40,6 @@ Este documento detalha a evolução do meu portfólio, as tecnologias implementa
 - [ ] Adicionar suporte a múltiplos idiomas (I18n).
 
 ---
+
+**LINK DO PROJETO**: https://ygorhslima.github.io/ygor-hslima-portfolio/home
 *Documentação atualizada em: Abril de 2025.*
