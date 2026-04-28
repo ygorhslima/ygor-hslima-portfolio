@@ -41,5 +41,4 @@ Este documento detalha a evolução do meu portfólio, as tecnologias implementa
 
 ---
 
-**LINK DO PROJETO**: https://ygorhslima.github.io/ygor-hslima-portfolio/home
-*Documentação atualizada em: Abril de 2025.*
+**LINK DO PROJETO**: https://ygorhslima.github.io/ygor-hslima-portfolio/
