@@ -11,7 +11,6 @@ export default function PostCards() {
         <div key={item.id} className="post-card">
           <Link
             to={`${PAGES.BLOG}/${item.id}`}
-            target="_blank"
             className="link-blog"
           >
             <div className="post-container">
