@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import { ThemeProvider } from "./context/ThemeContext";
 import LayoutWrapper from "./layout/layoutWrapper";
 import Home from "./page/Home";
@@ -10,7 +10,7 @@ import { PAGES } from "./core/constants/pages";
 export default function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter basename="/ygor-hslima-portfolio">
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Navigate to={PAGES.HOME} />} />
           <Route element={<LayoutWrapper />}>
@@ -19,7 +19,7 @@ export default function App() {
             <Route path={`${PAGES.BLOG}/:id`} element={<BlogDetail />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   );
 }
