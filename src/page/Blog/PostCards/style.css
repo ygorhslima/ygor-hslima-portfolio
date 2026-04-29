@@ -1,0 +1,46 @@
+.link-blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.post-card {
+    background-color: var(--fundo-card);
+    border: 1px solid var(--borda-card);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+}
+
+.post-info {
+    padding: 20px;
+}
+
+.post-info h3 {
+    color: var(--destaque);
+    margin: 10px 0;
+}
+
+.post-info .data {
+    font-size: 0.85em;
+    color: var(--texto-suave);
+}
+
+.post-container img{
+    width: 100%;
+    height: auto;
+    border-radius: 12px 12px 0 0;
+}

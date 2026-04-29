@@ -1,0 +1,7 @@
+.blog-container {
+    padding: 40px 10%;
+}
+
+@media (max-width: 768px) {
+    .blog-container { padding: 30px 5%; }
+}

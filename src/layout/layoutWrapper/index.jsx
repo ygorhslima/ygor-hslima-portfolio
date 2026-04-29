@@ -3,8 +3,6 @@ import Header from "../Header";
 import SideBar from "../SideBar";
 import { useState } from "react";
 import { useTheme } from "../../context/ThemeContext";
-import Footer from "../Footer";
-
 export default function LayoutWrapper() {
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
   const { temaEscuro, setTemaEscuro } = useTheme();
@@ -22,7 +20,6 @@ export default function LayoutWrapper() {
         <main>
           <Outlet />
         </main>
-        <Footer />
       </div>
     </div>
   );
