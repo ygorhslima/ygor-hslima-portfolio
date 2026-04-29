@@ -1,14 +1,13 @@
 import "./style.css";
-
-import SectionFicha from "../Home/components/SectionFicha";
 import PostCards from "./PostCards";
 import BlogFooter from "./BlogFooter";
+import BlogBanner from "./BlogBanner";
 
 export default function Blog() {
   return (
     <>
       <section className="blog-page">
-        <SectionFicha />
+        <BlogBanner />
         <div className="blog-container">
           <article id="blog-content">
             <h2>

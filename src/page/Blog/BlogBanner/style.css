@@ -1,26 +1,32 @@
-/* --- Estilos da Ficha --- */
-#ficha {
+#ficha-blog {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(4px);
-  padding: 80px;
+  padding: 140px;
+
+  background-image: url("../../../core/assets/imgs/blog-banner-wallpaper.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
-#ficha #content {
+#ficha-blog #content-blog {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   width: 90%;
   margin: 0px;
   padding: 10px;
   border-radius: 20px;
+  color: white;
+  text-align: center;
+  font-size: 25px;
 }
 
-/* --- Imagem/Foto --- */
-#ficha #content img.foto {
+#ficha-blog #content-blog img.foto {
   width: 200px;
   aspect-ratio: 1/1;
   object-fit: cover;
@@ -28,17 +34,17 @@
   border: 5px solid var(--fundo-card);
   outline: 5px solid var(--destaque);
   display: block;
-  margin: 0 auto 20px auto;
+  margin: auto;
+  margin-bottom: 20px;
   transition: 0.4s;
 }
 
-#ficha #content img.foto:hover {
+#ficha-blog #content-blog img:hover {
   transform: scale(1.1);
   box-shadow: 1px 1px 20px black;
 }
 
-/* --- Bloco de Texto --- */
-#ficha #content .text {
+#ficha-blog #content-blog .text {
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -46,53 +52,49 @@
   margin: 20px;
 }
 
-#ficha #content .text h1 {
+#ficha-blog #content-blog .text h1 {
   color: var(--destaque);
   margin: 15px;
   font-size: 50px;
   text-align: left;
 }
 
-#ficha #content .text p {
+#ficha-blog #content-blog .text p {
   line-height: 2em;
   font-size: 20px;
   color: white;
 }
 
-/* --- Media Query (Mobile) --- */
+/* --- Agrupamento das Regras Mobile --- */
 @media (max-width: 768px) {
-  #ficha {
-    padding: 20px; /* Reduzi o padding exagerado para telas pequenas */
-  }
-
-  #ficha #content {
+  #ficha-blog #content-blog {
     flex-direction: column;
     width: 100%;
     align-items: center;
   }
 
-  #ficha #content img.foto {
+  #ficha-blog #content-blog img.foto {
     width: 150px;
     margin-bottom: 10px;
   }
 
-  #ficha #content .text {
+  #ficha-blog #content-blog .text {
     width: 100%;
     margin: 10px 0;
     text-align: center;
   }
 
-  #ficha #content .text h1 {
+  #ficha-blog #content-blog .text h1 {
     font-size: 30px;
     text-align: center;
     margin: 10px 0;
   }
 
-  #ficha #content .text p {
+  #ficha-blog #content-blog .text p {
     line-height: 1.5em;
   }
 
-  #ficha #social {
+  #ficha-blog #social {
     margin-top: 10px;
     font-size: 1.2em;
   }
