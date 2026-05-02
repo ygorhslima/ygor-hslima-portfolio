@@ -3,7 +3,7 @@ import spaceTourismImg from "../assets/imgs/img-Space-tourism-website.png";
 import dropdownNavigationImg from "../assets/imgs/img-SectionDropdownNavigation.png";
 import sunnysideAgencyImg from "../assets/imgs/img-Sunnyside-agency.png";
 import ageCalculatorImg from "../assets/imgs/img-age-calculator-app-main.png";
-import blogrLandingPageImg from "../assets/imgs/img-blogr-landing-page-main.png";
+import blogrLandingPageImg from "../assets/imgs/img-Blogr-landing-page-main.png";
 import browserExtensionImg from "../assets/imgs/img-browser-extension-main.png";
 import imgRestCountries from "../assets/imgs/img-rest-countries-api.png";
 
