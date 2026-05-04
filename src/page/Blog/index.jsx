@@ -1,6 +1,5 @@
 import "./style.css";
 import PostCards from "./PostCards";
-import BlogFooter from "./BlogFooter";
 import BlogBanner from "./BlogBanner";
 
 export default function Blog() {
@@ -17,7 +16,6 @@ export default function Blog() {
           </article>
         </div>
       </section>
-      <BlogFooter />
     </>
   );
 }

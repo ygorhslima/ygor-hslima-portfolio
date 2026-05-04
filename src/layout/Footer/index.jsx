@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import { PAGES } from "../../core/constants/pages";
 import "./style.css";
 
 export default function Footer() {
@@ -14,11 +16,25 @@ export default function Footer() {
         <div className="links">
           <h4>Links</h4>
           <div className="link">
-            <a href="#">Home</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#skills">Skills</a>
-            <a href="#formacao">Formação</a>
-            <a href="#projetos">Projetos</a>
+            <Link to={`${PAGES.HOME}`} className="link">
+              <i className="fa-solid fa-house"></i>
+              <p>Home</p>
+            </Link>
+
+            <Link to={`${PAGES.HOME}${PAGES.TITLE_LINKS_HOME.SKILLS}`} className="link">
+              <i className="fa-solid fa-brain"></i>
+              <p>Skills</p>
+            </Link>
+
+            <Link to={`${PAGES.HOME}${PAGES.TITLE_LINKS_HOME.FORMACAO}`} className="link">
+              <i className="fa-solid fa-graduation-cap"></i>
+              <p>Formação</p>
+            </Link>
+
+            <Link to={`${PAGES.HOME}${PAGES.TITLE_LINKS_HOME.PROJETOS}`} className="link">
+              <i className="fa-solid fa-trowel-bricks"></i>
+              <p>Projetos</p>
+            </Link>
           </div>
         </div>
         <div className="connect">

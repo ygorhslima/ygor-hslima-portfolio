@@ -1,6 +1,6 @@
 :root {
   /* Tons de fundo mais limpos */
-  --fundo-principal: #ffffff;      /* Branco puro para brilho */
+  --fundo-principal: #e2e4e6;      /* Um off-white (Slate 50) que reduz a fadiga visual */
   --fundo-secundario: #edeeef;     /* Azulado bem leve para áreas de apoio */
   
   /* Tipografia com melhor legibilidade (menos cinza, mais contraste) */
@@ -21,14 +21,18 @@
 }
 
 .escuro {
-  --fundo-principal: #0f172a;
-  --fundo-secundario: #1c222b;
-  --texto: #f8fafc;
-  --texto-inverso: #0f172a;
-  --destaque: #38bdf8;
-  --destaque-inverso: #0c4a6e;
-  --fundo-card: #1e293b;
-  --header: rgba(30, 41, 59, 0.8);
+  --fundo-principal: #0d1117; /* Slightly darker, more GitHub-like dark */
+  --fundo-secundario: #161b22; /* More distinct from main background */
+  --texto: #c9d1d9; /* Softer white for readability */
+  --texto-suave: #8b949e; /* Better contrast for secondary text */
+  --texto-inverso: #0d1117;
+  --destaque: #58a6ff; /* Brighter blue for dark mode accent */
+  --destaque-hover: #388bfd; /* Slightly darker blue for hover */
+  --destaque-inverso: #010409; /* Darker background for badges/buttons */
+  --fundo-card: #161b22; /* Card background same as secondary for consistency */
+  --borda-card: #30363d; /* Clearer border for cards */
+  --aside: #ffffff;
+  --header: rgba(22, 27, 34, 0.9); /* More opaque header */
   --aside: #ffffff;
 }
 
@@ -38,9 +42,13 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: Verdana, sans-serif;
-  font-size: 15px; /* Redução leve para parecer mais limpo */
+  font-family: 'Inter', sans-serif; /* Changed to Inter, a modern sans-serif */
+  font-size: 16px; /* Slightly larger base font size */
   line-height: 1.6; /* Espaçamento entre linhas maior traz "ar" ao design */
   -webkit-font-smoothing: antialiased; /* Deixa a fonte mais nítida em Mac/iOS */
 
@@ -51,7 +59,7 @@ body {
 /* Agrupando seletores com o mesmo padding */
 header, 
 #formacao, #projetos, #skills, #ficha, #sobre {
-  padding: 40px 10%; /* Padding lateral em % ajuda na responsividade */
+  padding: 40px 10%;
   width: 100%;
 }
 
@@ -62,13 +70,63 @@ header,
 article {
   background-color: var(--fundo-card);
   margin-bottom: 20px;
-  border-radius: 8px;
+  border-radius: 12px; /* Slightly more rounded corners */
   padding: 20px; /* Adicionado para o texto não colar na borda */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transitions */
 }
 
 article h2 {
   color: var(--destaque);
-  margin-bottom: 10px;
+  margin-bottom: 15px; /* Increased margin for better separation */
+}
+
+/* New styles for strong tags */
+strong {
+  color: var(--destaque); /* Make bold text stand out more */
+  font-weight: 600; /* Ensure it's bold */
+}
+
+/* Styling for the "Ver certificado" button */
+.certificados button {
+  background-color: var(--destaque);
+  color: var(--texto-inverso); /* White text on accent color */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px; /* More rounded */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: 500;
+  margin-top: 10px; /* Add some space above the button */
+}
+
+.certificados button:hover {
+  background-color: var(--destaque-hover);
+  transform: translateY(-2px);
+}
+
+/* Styling for project details (summary/details tag) */
+.projeto-info details {
+  margin-top: 15px; /* Add some space */
+  border: 1px solid var(--borda-card); /* Add a subtle border */
+  border-radius: 8px;
+  padding: 10px;
+  background-color: var(--fundo-secundario); /* Slightly different background */
+  color: var(--texto);
+}
+
+.projeto-info summary {
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--destaque); /* Make it look like a link */
+  outline: none; /* Remove default outline on focus */
+}
+
+.projeto-info details p {
+  margin-top: 10px;
+  padding-left: 10px; /* Indent the detailed description */
+  border-left: 2px solid var(--destaque); /* Visual cue for expanded content */
+  color: var(--texto-suave);
 }
 
 /* Container de vídeo otimizado */
